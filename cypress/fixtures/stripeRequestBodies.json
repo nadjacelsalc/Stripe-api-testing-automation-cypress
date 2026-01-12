@@ -91,14 +91,6 @@
     "confirm": true
   },
 
-  "createPaymentProcessing": {
-    "amount": 1200,
-    "currency": "usd",
-    "payment_method_types": ["card"],
-    "payment_method": "pm_card_processing",
-    "confirm": true
-  },
-
   "createPaymentManualConfirmation": {
     "amount": 750,
     "currency": "usd",
