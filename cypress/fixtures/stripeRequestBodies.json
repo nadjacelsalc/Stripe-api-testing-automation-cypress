@@ -1,0 +1,158 @@
+{
+  "createPaymentSuccessful": {
+    "amount": 200,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true
+  },
+
+  "createPaymentWithDescription": {
+    "amount": 350,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true,
+    "description": "Test payment with description"
+  },
+
+  "createPaymentWithMetadata": {
+    "amount": 450,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true,
+    "metadata": {
+      "order_id": "ORD-12345",
+      "customer_type": "qa-test"
+    }
+  },
+
+  "createPaymentUnsuccessfulAmountTooLarge": {
+    "amount": 5000000000000000,
+    "currency": "usd",
+    "payment_method_types": ["card"]
+  },
+
+  "createPaymentUnsuccessfulMissingCurrency": {
+    "amount": 500,
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true
+  },
+
+  "createPaymentUnsuccessfulNegativeAmount": {
+    "amount": -100,
+    "currency": "usd",
+    "payment_method_types": ["card"]
+  },
+
+  "createPaymentUnsuccessfulZeroAmount": {
+    "amount": 0,
+    "currency": "usd",
+    "payment_method_types": ["card"]
+  },
+
+  "createPaymentUnsupportedCurrency": {
+    "amount": 500,
+    "currency": "xyz",
+    "payment_method_types": ["card"]
+  },
+
+  "createPaymentRequiresAuthentication": {
+    "amount": 800,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_authenticationRequired",
+    "confirm": true
+  },
+
+  "createPaymentInsufficientFunds": {
+    "amount": 900,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_chargeDeclinedInsufficientFunds",
+    "confirm": true
+  },
+
+  "createPaymentCardDeclined": {
+    "amount": 1000,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_chargeDeclined",
+    "confirm": true
+  },
+
+  "createPaymentExpiredCard": {
+    "amount": 600,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_expired",
+    "confirm": true
+  },
+
+  "createPaymentProcessing": {
+    "amount": 1200,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_processing",
+    "confirm": true
+  },
+
+  "createPaymentManualConfirmation": {
+    "amount": 750,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": false
+  },
+
+  "refundPaymentSuccessful": {
+    "payment_intent": "pi_3S6sPyRui6YT0wnC11GcvlhV"
+  },
+
+  "refundPaymentPartial": {
+    "payment_intent": "pi_3S6sPyRui6YT0wnC11GcvlhV",
+    "amount": 100
+  },
+
+  "refundPaymentDuplicate": {
+    "payment_intent": "pi_3S6sPyRui6YT0wnC11GcvlhV"
+  },
+
+  "refundPaymentInvalidIntent": {
+    "payment_intent": "pi_invalid_123"
+  },
+
+  "unauthorizedPaymentRequest": {
+    "amount": 675,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true
+  },
+
+  "paymentWithIdempotencyKeySuccessful": {
+    "amount": 700,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true
+  },
+
+  "paymentWithIdempotencyKeyDuplicate": {
+    "amount": 700,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_card_visa",
+    "confirm": true
+  },
+
+  "paymentWithInvalidPaymentMethod": {
+    "amount": 500,
+    "currency": "usd",
+    "payment_method_types": ["card"],
+    "payment_method": "pm_invalid_123",
+    "confirm": true
+  }
+}

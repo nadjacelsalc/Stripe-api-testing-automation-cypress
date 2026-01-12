@@ -1,0 +1,14 @@
+# Environment variables
+.env
+cypress.env.json
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# Node
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
